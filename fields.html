@@ -1,0 +1,19 @@
+<template name="gallery">
+  <label>{{field.label}}</label>
+  <ul class="fieldActionsWrap text-right list-unstyled">
+    <li>
+      <button class="btn btn-xs btn-primary galleryFakeInput">Upload</button>
+      <input type="file" class="galleryInput" multiple>
+    </li>
+  </ul>
+  <ul class="vectorGallery list-unstyled row">
+    {{#each images}}
+      <li class="galleryImage col-md-3">
+        <div class="galleryItem">
+          <a target="_blank" style="background-image:url('http://res.cloudinary.com/{{cloud}}/image/upload/w_115,h_115,c_fill,g_face/{{image.public_id}}.jpg')" href="{{image.url}}"></a>
+          <button class="btn btn-xs btn-warning galleryDelete">Delete</button>
+        </div>
+      </li>
+    {{/each}} 
+  </ul>
+</template>
