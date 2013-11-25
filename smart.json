@@ -1,0 +1,8 @@
+{
+  "name": "vector-gallery",
+  "description": "Cloudinary gallery for Vector",
+  "homepage": "http://vector.meteor.com",
+  "author": "Davide Dal Colle",
+  "version": "0.1.0",
+  "git": "https://github.com/handmadeadv/vector-gallery.git"
+}
